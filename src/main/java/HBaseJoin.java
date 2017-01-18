@@ -245,19 +245,6 @@ public class HBaseJoin {
         }
     }
 
-    public static void main(String[] args) {
-        ArrayList<String> tableList = new ArrayList<String>();
-        tableList.add("Person");
-        tableList.add("Gender");
-        tableList.add("Hobby");
-        ArrayList<String> conditionList = new ArrayList<String>();
-        conditionList.add("Person.info:id=Gender.info:id");
-        conditionList.add("Person.info:name=Hobby.info:name");
-        try {
-            run(tableList, conditionList);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+
 
 }
